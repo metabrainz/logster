@@ -10,8 +10,8 @@ class Status:
         self.prop = prop
         self.pred = pred
 
-    def matches(self, code):
-        return self.pred(code)
+    def matches(self, code, size):
+        return self.pred(code, size)
 
 # Status codes are matched here from top to bottom - so do most specific first
 status = [
